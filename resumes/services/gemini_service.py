@@ -1,5 +1,6 @@
 import google.generativeai as genai
 import json
+from decouple import config
 
 
 genai.configure(
@@ -7,7 +8,7 @@ genai.configure(
 )
 
 model = genai.GenerativeModel(
-    "gemini-2.0-flash"
+    "gemini-2.5-flash"
 )
 
 def analyze_resume(text):
